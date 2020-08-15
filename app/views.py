@@ -8,7 +8,7 @@ from app import app
 
 # The node with which our application interacts, there can be multiple
 # such nodes as well.
-CONNECTED_NODE_ADDRESS = "https://yeehaw-backend.herokuapp.com/"
+CONNECTED_NODE_ADDRESS = "http://127.0.0.1:8000"
 
 posts = []
 
@@ -36,7 +36,7 @@ def fetch_posts():
 
 @app.route('/')
 def index():
-#    fetch_posts()
+    fetch_posts()
     return render_template('index.html',
                            title='YourNet: Decentralized '
                                  'content sharing',
