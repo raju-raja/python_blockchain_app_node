@@ -36,7 +36,7 @@ def fetch_posts():
 
 @app.route('/')
 def index():
-    //fetch_posts()
+#    fetch_posts()
     return render_template('index.html',
                            title='YourNet: Decentralized '
                                  'content sharing',
