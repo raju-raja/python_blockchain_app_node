@@ -135,7 +135,7 @@ class Blockchain:
         return True
 
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
 # the node's copy of blockchain
 blockchain = Blockchain()
