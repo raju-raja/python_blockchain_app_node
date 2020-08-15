@@ -144,6 +144,10 @@ blockchain.create_genesis_block()
 # the address to other participating members of the network
 peers = set()
 
+@app.route("/") 
+def home_view(): 
+    return "hello world"
+    )
 
 # endpoint to submit a new transaction. This will be used by
 # our application to add new data (posts) to the blockchain
